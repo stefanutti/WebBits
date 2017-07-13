@@ -1,6 +1,6 @@
-# WebBits
+# web-bits
 
-https://store.docker.com/images/mysql
+https://store.docker.com
 
 docker run --name gv-web-bits-mysql -p 8080:8080 -e MYSQL_ROOT_PASSWORD=gv-web-bits -d mysql:latest
 
