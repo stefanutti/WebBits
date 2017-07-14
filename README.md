@@ -1,7 +1,4 @@
-# web-bits
+# webbits
 
-https://store.docker.com
-
-docker run --name gv-web-bits-mysql -p 8080:8080 -e MYSQL_ROOT_PASSWORD=gv-web-bits -d mysql:latest
-
-docker run --name gv-web-bits-wordpress --link gv-web-bits:mysql -p 8080:80 -d wordpress:latest
+- docker run --name gv-webbits-mysql -p 8080:8080 -e MYSQL_ROOT_PASSWORD=gv-web-bits -d mysql:latest
+- docker run --name gv-webbits-wordpress --link gv-webbits-mysql:mysql -p 9999:80 -d wordpress:latest
