@@ -1,13 +1,25 @@
 # webbits
 
+## First run
 - docker run --name gv-webbits-mysql -e MYSQL_ROOT_PASSWORD=gv -p 14010:8080 -d mysql:latest
 - docker run --name gv-webbits-wordpress --link gv-webbits-mysql:mysql -p 14020:80 -d wordpress:latest
 
+## Create a new image
 - docker commit gv-webbits-mysql stefanutti/gv-webbits-mysql:1.0
 - docker commit gv-webbits-wordpress stefanutti/gv-webbits-wordpress:1.0
 
+## First run with the new image
 - docker run --name gv-webbits-mysql -e MYSQL_ROOT_PASSWORD=gv -p 14010:8080 -d stefanutti/gv-webbits-mysql:latest
 - docker run --name gv-webbits-wordpress --link gv-webbits-mysql:mysql -p 14020:80 -d stefanutti/gv-webbits-wordpress:latest
+
+## Start/Stop
+- docker start gv-webbits-mysql
+- docker start gv-webbits-wordpress
+- docker stop gv-webbits-wordpress
+- docker stop gv-webbits-mysql
+
+## Plugins:
+- ninjaforms.com
 
 How it works:
 
