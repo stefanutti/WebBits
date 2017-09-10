@@ -18,9 +18,14 @@
 - docker stop gv-webbits-wordpress
 - docker stop gv-webbits-mysql
 
-## Plugins:
-- ninjaforms.com
+## Forms:
+- Forms can be inserted manually inside a page or with one of the plugins of Wordpress, as for example:
+  - http://ninjaforms.com/
+  - http://www.gravityforms.com/
 
-How it works:
+## PHP:
+- If you want interact with php directly inside the page or post, you can try this plugin:
+  - https://xyzscripts.com/
 
+## Additional links:
 - https://shibulijack.wordpress.com/2012/03/18/create-custom-forms-in-wordpress (forms + php callback)
